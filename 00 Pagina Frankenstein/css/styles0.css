@@ -1,0 +1,431 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+body{
+  width: 100%;
+  position: absolute;
+
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.banner h2{
+  padding: auto;
+  position: relative;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  font-size: 120px;
+  font-family: sans-serif;
+  background-image: linear-gradient(90deg, purple, black,  deepskyblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  position: absolute;
+  top: 6%;
+  border:25px solid #000;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  
+
+}
+
+
+
+
+
+
+.header{
+  height: 800px;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/KDA.jpg);
+  -webkit-background-size: cover;
+  background-size: center;
+  background-position: center center; 
+  background-attachment: fixed;
+  cursor: pointer;
+}
+
+.header img{
+  width: 100%;
+}
+
+.content{
+  background: black;
+  color: #fff;
+  height: 300px;
+  padding-top: 50px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  min-height: 15vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h2{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.content p{
+  padding: 0 150px;
+  line-height: 1.9;
+}
+
+.content:before{
+  position: absolute;
+  content: '';
+  width: 78%;
+  height: 150px;
+  top:-40px;
+  left: 0;
+  background: #000;
+  transform: skewY(10deg);
+}
+
+.content:after{
+  position: absolute;
+  content: '';
+  width: 60%;
+  height: 155px;
+  top: -60px;
+  right: 0;
+  background: #000;
+  transform: skewY(-5deg);
+}
+
+.nav{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.nav li{
+  background: magenta;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  text-align: center;
+  font-weight: 980;
+  color: #fff;
+  list-style: none;
+  width: 200px;
+  height: 30px;
+  margin: 0 20px;
+  transition: 0.7s;
+  cursor: pointer;
+  font-family: lato;
+}
+
+.nav li:hover{
+  background: cyan;
+  box-shadow: 0 0 0 8px black,
+              0 0 0 12px magenta;
+}
+
+
+
+
+.box{
+  padding-top: 10%;
+}
+img{
+  width: 100%;
+  object-fit: cover;
+  -webkit-box-reflect: below 2px linear-gradient(transparent,transparent,rgba(0,0,0,0.4));
+  transition: all 1s ease;
+}
+
+img:hover{
+  transform: scale(1.09);
+}
+
+.box-area{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.box{
+  list-style: none;
+}
+
+.box li{
+  font-family: poppins;
+  cursor: pointer;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  color: #696969;
+  display: inline-block;
+  margin: 0 20px;
+  padding: 25px;
+  border: 2px solid rgba(255,255,255,0.3)
+  box-shadow: 4px 4px 6pc 0 rgba(0,0,0,0.1), 
+              -4px -4px 6px cyan;
+  border-radius: 50%;
+}
+
+.box i{
+  font-size: 40px;
+}
+
+.box li:hover{
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.1), 
+              -4px -4px 10px  cyan;
+}
+
+.box li:focus{
+  outline: none;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.1),
+              -4px -4px 10px  cyan,
+              4px 4px 10px 0 rgba(0,0,0,0.1) inset,
+              -4px -4px 10px  cyan inset;
+}
+
+
+.box li:hover,
+.box li:focus{
+  color: magenta;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bax{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-background-size: cover;
+  background-size:cover; 
+}
+
+.bax div{
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: animate 5s linear infinite;
+  background: rgba(0,0,0,0.8);
+  border-radius: 15px;
+}
+
+.bax div:nth-child(2){
+  top:26%;
+  left:89%;
+  animation: animate 10s linear infinite;
+}
+
+.bax div:nth-child(3){
+  top:80%;
+  left:90%;
+  animation: animate 5s linear infinite;
+}
+
+.bax div:nth-child(4){
+  top:65%;
+  left:75%;
+  animation: animate 7s linear infinite;
+}
+
+.bax div:nth-child(5){
+  top:90%;
+  left:10%;
+  animation: animate 9s linear infinite;
+}
+
+.bax div:nth-child(6){
+  top:30%;
+  left:60%;
+  animation: animate 5s linear infinite;
+}
+
+.bax div:nth-child(7){
+  top:70%;
+  left:20%;
+  animation: animate 8s linear infinite;
+}
+
+.bax div:nth-child(8){
+  top:75%;
+  left:60%;
+  animation: animate 10s linear infinite;
+}
+
+.bax div:nth-child(9){
+  top:23%;
+  left:50%;
+  animation: animate 6s linear infinite;
+}
+
+.bax div:nth-child(10){
+  top:35%;
+  left:7%;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform: scale(0) translateY(0) rotate(50deg);
+  }
+  100%{
+    transform: scale(1.6) translateY(-250px) rotate(360deg);
+  }
+}
+
+
+#center{
+  background color:#000; 
+}
+
+
+
+
+
+
+
+
+
+.galeria{
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.galeria ul{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width:500px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.galeria ul li{
+
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animate 8s ease both infinite;
+}
+.galeria li:nth-child(2){
+  animation-delay: 3s;
+}
+.galeria li:nth-child(3){
+  animation-delay: 5s;
+}
+.galeria img{
+  width:500px;
+  border:10px solid #000;
+}
+
+@keyframes animate{
+  0%, 10%{
+    opacity: 1;
+    transform: none;
+    z-index: 10;
+  }
+  15%, 40%{
+    opacity: 0.3;
+    transform: translate3d(-150px, 0, 0) scale(0.5);
+  }
+  60%{
+    opacity: 0.2;
+    transform: translate3d(150px, 0, 0) scale(0.5);
+  }
+  80%, 90%{
+    opacity: 0.9;
+    transform: translate3d(170px, 0, 0) scale(0.5);
+  }
+
+}
+
+
+
+.smile{
+  position: relative;
+  top: 100%;
+  left: 90%;
+  width: 100%;
+  height: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  transform: translate( -50%, -50%);
+}
+
+.face-area{
+  width: 300px;
+  height: 300px;
+  background: red;
+  position: relative;
+  border-radius: 150px;
+  display: block;
+}
+
+.eye-area{
+  width: 50px;
+  height: 80px;
+  background: black;
+  border-radius: 140px;
+  position: absolute;
+  top: 40px;
+}
+
+.eye1{
+  left: 75px;
+}
+
+.eye2{
+  right: 75px;
+}
+
+.smile-area{
+  width: 200px;
+  height: 70px;
+  border: 10px solid black;
+  border-top: 0;
+  background: black;
+  border-radius: 0 0 120px 120px / 0 0 90px 90px;
+  position: absolute;
+  bottom: 50px;
+  left: 50px; 
+}
